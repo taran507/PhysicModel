@@ -17,7 +17,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         super(1000, 500, 1); 
-        //addObject (new GAme(),0, 0);
+        addObject (new Bg(),500, 250);
         addObject (new Grass(), 500, 450);
         addObject (label, 500, 450);
         createControls();
