@@ -12,7 +12,6 @@ public class MyWorld extends World
     public Yadro yadro= new Yadro();
     public Slider speedSlider;
     public Slider angleSlider;
-    public Slider massSlider;
     public Label label = new Label(0,70);
     
     public MyWorld()
@@ -27,22 +26,18 @@ public class MyWorld extends World
     
     public void createControls() 
     {
-        
         speedSlider = new Slider ("Speed", 1, 100);
-        addObject (speedSlider, 260, 65);
+        addObject (speedSlider, 100, 55);
         
         angleSlider = new Slider ("Angle", 0, 90);
-        addObject (angleSlider, 470, 65);
-        
-        massSlider = new Slider ("Mass", 1, 10);
-        addObject (massSlider, 680, 65);
+        addObject (angleSlider, 250, 55);
     }
     
     private void CreateObjects()
     {
         addObject (pynguin, 950, 370);
-        //push.turn(-angleSlider.getValue());
         addObject (push, 150, 330);
+        
         //push.state=Boolean.TRUE;
     }
 }

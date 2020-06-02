@@ -6,8 +6,8 @@ import greenfoot.*;
  */
 public class Slider extends Actor
 {
-    private static final int MIN_X = -82;
-    private static final int MAX_X = 81;
+    private static final int MIN_X = -57;
+    private static final int MAX_X = 57;
     private static final double RANGE_X = MAX_X - MIN_X;
     
     private SliderHand hand;
@@ -37,9 +37,9 @@ public class Slider extends Actor
         getWorld().addObject (hand, getX(), getY()-4);
 
         value = new Text(" ");
-        getWorld().addObject (value, getX(), getY()-30);
+        getWorld().addObject (value, getX(), getY()-23);
 
-        getWorld().addObject (label, getX(), getY()+30);
+        getWorld().addObject (label, getX(), getY()+20);
 
         setValueFromX(hand.getX());
     }
