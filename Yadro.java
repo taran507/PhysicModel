@@ -1,8 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)import 
-import java.util.Timer;
+import java.util.Random;
+
 public class Yadro extends Actor
 {
     private final double G = 9.8;
+    private final Random rand = new Random();
     private int speed;
     private int time;
     private int angle=0;
@@ -10,7 +12,9 @@ public class Yadro extends Actor
     private int mass=0;
     private Label l1;
     private Push push;
+    private Pynguin pynguin;
     private Coordin pos = new Coordin();
+    
     public void setSpeed(int speed)
     {
         this.speed=-speed;
@@ -29,6 +33,7 @@ public class Yadro extends Actor
     {
         l1=((MyWorld)getWorld()).label;
         push=((MyWorld)getWorld()).push;
+        pynguin = ((MyWorld)getWorld()).pynguin;
         fly();
         time++;
     }
@@ -62,6 +67,7 @@ public class Yadro extends Actor
     public void remove()
     {
         getWorld().removeObject(this);
+        pynguin.setLocation(600+rand.nextInt(400),370);
         push.state=Boolean.FALSE;
         push.getIMG();
         angle=0;

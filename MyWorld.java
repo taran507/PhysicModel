@@ -35,9 +35,8 @@ public class MyWorld extends World
     
     private void CreateObjects()
     {
-        addObject (pynguin, 950, 370);
         addObject (push, 150, 330);
-        
+        addObject (pynguin, 950, 370);
         //push.state=Boolean.TRUE;
     }
 }
