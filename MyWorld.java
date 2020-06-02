@@ -20,7 +20,7 @@ public class MyWorld extends World
         setBackground("bg.jpg");
         //addObject (new Bg(),500, 250);
         addObject (new Grass(), 500, 570);
-        addObject (label, 950, 50);
+        addObject (label, 900, 50);
         createControls();
         CreateObjects();
     }

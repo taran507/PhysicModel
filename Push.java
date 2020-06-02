@@ -26,7 +26,8 @@ public class Push extends Shooter
                 
                 y1.setAngle((((MyWorld)getWorld()).angleSlider.getValue()));
                 y1.setSpeed(((MyWorld)getWorld()).speedSlider.getValue());
-                getWorld().addObject( y1, 219,325);
+                getWorld().addObject( y1, 225,423);
+                y1.startTimer();
                 this.state = Boolean.TRUE;
                 getIMG();
             }
