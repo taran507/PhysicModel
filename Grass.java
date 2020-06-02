@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class grass here.
+ * Write a description of class Grass here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Grass extends Actor
 {
     /**
-     * Act - do whatever the grass wants to do. This method is called whenever
+     * Act - do whatever the Grass wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

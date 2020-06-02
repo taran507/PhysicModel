@@ -67,7 +67,7 @@ public class Yadro extends Actor
     public void remove()
     {
         getWorld().removeObject(this);
-        pynguin.setLocation(600+rand.nextInt(400),370);
+        pynguin.setLocation(600+rand.nextInt(400),455);
         push.state=Boolean.FALSE;
         push.getIMG();
         angle=0;
