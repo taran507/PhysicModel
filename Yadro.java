@@ -1,6 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)import 
 import java.util.Random;
 import java.util.Timer;
+import java.util.TimerTask;
 
 public class Yadro extends Actor
 {
@@ -19,6 +20,7 @@ public class Yadro extends Actor
     {
         timer.mark();
     }
+    
     public void setSpeed(int speed)
     {
         this.speed=-speed;
@@ -64,10 +66,10 @@ public class Yadro extends Actor
     {
         Coordin pos;
         pos = new Coordin();
-        int time = this.timer.millisElapsed()/1000;
+        int time = this.timer.millisElapsed()/100;
         pos.x = -(this.speed * Math.cos(-Math.toRadians(angle))*time);
         pos.y = -(this.speed * Math.sin(-Math.toRadians(angle))*time - (G*Math.pow(time,2))/2);
-        l1.setValue(time);
+        //l1.setValue(time);
         return pos;
     }
     
