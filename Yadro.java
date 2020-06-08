@@ -6,6 +6,8 @@ public class Yadro extends Actor
     private final double G = 9.8;
     private final Random rand = new Random();
     private Coordin pos = new Coordin();
+    private GreenfootImage img = new GreenfootImage("explosion1.png");
+    private GreenfootImage img1 = new GreenfootImage("yadro_0.png");
     private int angle=0;
     private int value=0;
     private int mass=0;
@@ -49,7 +51,7 @@ public class Yadro extends Actor
         else if(this.isTouching(Pynguin.class)){
             value++;
             l1.setValue(value);
-            pynguin.explosion();
+            //pynguin.explosion();
             this.remove();
         }else
         {
@@ -68,6 +70,9 @@ public class Yadro extends Actor
     
     public void remove()
     {
+        setImage(img);
+        Greenfoot.delay(20);
+        setImage(img1);
         getWorld().removeObject(this);
         pynguin.create();
         push.state=Boolean.FALSE;

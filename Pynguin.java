@@ -29,7 +29,7 @@ public class Pynguin extends Actor
     
     public void create()
     {
-        Greenfoot.delay(20);
+        //Greenfoot.delay(20);
         setImage(pynguin);
         setLocation(540+rand.nextInt(400),455);
     }
