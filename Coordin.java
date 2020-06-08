@@ -7,7 +7,7 @@
 public class Coordin  
 {
     // instance variables - replace the example below with your own
-    public double x,y;
+    public double x, y;
 
     /**
      * Constructor for objects of class coordin
